@@ -1,1 +1,1 @@
-web: gunicorn analisisgastos.wsgi
+web: waitress-serve --port=$PORT analisisgastos.wsgi:application
