@@ -6,5 +6,3 @@ def index(request):
 def add_gastos(request):
     return render(request, 'gastos/add_gasto.html')
 
-def test_view(request):
-    return render(request, 'test.html')

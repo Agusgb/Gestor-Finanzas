@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv  # Importa load_dotenv
-
+import django_heroku
+django_heroku.settings(locals())
 # Cargar las variables de entorno desde el archivo .env
 load_dotenv()
 
@@ -126,3 +127,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+django_heroku.settings(locals())
